@@ -84,7 +84,7 @@ La función clean_text es un método que forma parte de una clase y se encarga d
 
 - remove_punctuation: Remueve los signos de puntuación del texto.
 - remove_url: Elimina las URLs presentes en el texto.
-- remove_url: Elimina los emojis en el texto.
+- remove_emoji: Elimina los emojis en el texto.
 - remove_special_character: Elimina los caracteres especiales del texto.
 - nltk.word_tokenize: Tokeniza el texto en una lista de palabras individuales.
 En resumen, la función clean_text realiza una serie de transformaciones en un texto para limpiarlo y dividirlo en palabras individuales, lo cual puede ser útil para posteriores análisis o procesamientos de texto.
