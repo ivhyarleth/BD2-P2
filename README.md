@@ -87,13 +87,15 @@ La función clean_text es un método que forma parte de una clase y se encarga d
 - remove_emoji: Elimina los emojis en el texto.
 - remove_special_character: Elimina los caracteres especiales del texto.
 - nltk.word_tokenize: Tokeniza el texto en una lista de palabras individuales.
-En resumen, la función clean_text realiza una serie de transformaciones en un texto para limpiarlo y dividirlo en palabras individuales, lo cual puede ser útil para posteriores análisis o procesamientos de texto.
+- 
+En resumen, la función clean_text realiza una serie de transformaciones en un texto para limpiarlo y dividirlo en palabras individuales, la cual es útil para posteriores procesamientos de texto.
+
 #### Ejecución óptima de consultas
 Para obtener los resultados de tu consulta siguiendo los pasos mencionados, se realizaría lo siguiente:
 
-1. Limpieza de la consulta en lenguaje natural: Aplicarías las mismas funciones de limpieza que se mencionaron anteriormente, como remover puntuación, URLs, caracteres especiales y emojis. El resultado sería una consulta limpia como: "El señor Daniel Urresti me bloqueo por cuestionar continuamente su candidatura".
+1. Limpieza de la consulta en lenguaje natural: Aplicarías las mismas funciones de limpieza que se mencionaron anteriormente, como remover puntuación, URLs, caracteres especiales y emojis. 
 
-2. Cálculo de TF e IDF: Para cada palabra en la consulta, se calcularía su frecuencia (TF) y su factor de inverso de documento (IDF). El TF mide la frecuencia de una palabra en la consulta, y el IDF mide la importancia de una palabra en el corpus de documentos.
+2. Cálculo de TF e IDF: Para cada palabra en la consulta, se calcularía su frecuencia (TF) y su factor de inverso de documento (IDF). El TF mide la frecuencia de una palabra en la consulta, y el IDF mide la importancia de una palabra en el documento.
 
 3. Cálculo del índice invertido: Si una palabra de la consulta está presente en el índice invertido de los documentos, se obtendría el índice invertido correspondiente a esa palabra.
 
@@ -104,7 +106,7 @@ Para obtener los resultados de tu consulta siguiendo los pasos mencionados, se r
 ## Frontend
 Se realizó la implementación de una interfaz gráfica para que el usuario pueda interactuar con las funciones de búsqueda y recuperación de _tweets_. Es intiutiva y amigable para el usuario, recoge la consulta y solicita que ingrese el _top k_, que es la cantidad de documentos a recuperar según la mayor similitud de su consulta.
 
-<img src="images/gui_p2.jpeg" alt="GUI VIEW" width="400"/>
+<img src="images/gui_p2.jpg" alt="GUI VIEW" width="400"/>
 
 
 #### Video
