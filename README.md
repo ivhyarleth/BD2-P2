@@ -104,7 +104,7 @@ Para obtener los resultados de tu consulta siguiendo los pasos mencionados, se r
 ## Frontend
 Se realizó la implementación de una interfaz gráfica para que el usuario pueda interactuar con las funciones de búsqueda y recuperación de _tweets_. Es intiutiva y amigable para el usuario, recoge la consulta y solicita que ingrese el _top k_, que es la cantidad de documentos a recuperar según la mayor similitud de su consulta.
 
-<img src="images/gui_p2.jpeg" alt="GUI VIEW" width="400"/>
+<img src="images/gui_p2.jpg" alt="GUI VIEW" width="400"/>
 
 
 #### Video
