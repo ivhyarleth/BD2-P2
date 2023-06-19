@@ -88,11 +88,25 @@ La función clean_text es un método que forma parte de una clase y se encarga d
 - remove_special_character: Elimina los caracteres especiales del texto.
 - nltk.word_tokenize: Tokeniza el texto en una lista de palabras individuales.
 En resumen, la función clean_text realiza una serie de transformaciones en un texto para limpiarlo y dividirlo en palabras individuales, lo cual puede ser útil para posteriores análisis o procesamientos de texto.
+#### Ejecución óptima de consultas
+Para obtener los resultados de tu consulta siguiendo los pasos mencionados, se realizaría lo siguiente:
+
+1. Limpieza de la consulta en lenguaje natural: Aplicarías las mismas funciones de limpieza que se mencionaron anteriormente, como remover puntuación, URLs, caracteres especiales y emojis. El resultado sería una consulta limpia como: "El señor Daniel Urresti me bloqueo por cuestionar continuamente su candidatura".
+
+2. Cálculo de TF e IDF: Para cada palabra en la consulta, se calcularía su frecuencia (TF) y su factor de inverso de documento (IDF). El TF mide la frecuencia de una palabra en la consulta, y el IDF mide la importancia de una palabra en el corpus de documentos.
+
+3. Cálculo del índice invertido: Si una palabra de la consulta está presente en el índice invertido de los documentos, se obtendría el índice invertido correspondiente a esa palabra.
+
+4. Cálculo de TF-IDF del query: Se multiplicaría el TF de cada palabra en la consulta por su correspondiente IDF para obtener el valor TF-IDF del query. Esto daría una representación numérica de la importancia de cada palabra en la consulta.
+
+5. Ordenamiento de resultados: Finalmente, se ordenarían los documentos en una lista de cosenos, utilizando el valor de similitud del coseno entre el query y cada documento. La lista estaría ordenada de mayor a menor similitud, y contendría el ID del documento, la similitud del coseno y la lista de tweets correspondientes a ese documento.
 
 ## Frontend
 Se realizó la implementación de una interfaz gráfica para que el usuario pueda interactuar con las funciones de búsqueda y recuperación de _tweets_. Es intiutiva y amigable para el usuario, recoge la consulta y solicita que ingrese el _top k_, que es la cantidad de documentos a recuperar según la mayor similitud de su consulta.
 
 <img src="images/gui_p2.jpeg" alt="GUI VIEW" width="400"/>
+
+
 #### Video
 
 La presentación final en video se encuentra en el siguiente [link](https://drive.google.com/file/d/1ClbNamqOJMUT2LDFOIJJKhZUBPujqTeB/view?usp=sharing)
